@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+
+<!-- HEAD -->
+<head th:replace="template/plantilla :: head"></head>
+<link rel="stylesheet" th:href="@{/css/plantilla.css}">
+<link rel="stylesheet" th:href="@{/css/tablas.css}">
+<title>UNLa - Usuarios</title>
+<!-- HEAD -->
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <header th:replace="template/plantilla :: header"></header>
+    <!-- NAVBAR -->
+
+
+    <!-- CONTENIDO -->
+    <div class="col-11">
+
+        <h2>Usuarios</h2>
+
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>DNI</th>
+                        <th>EMAIL</th>
+                        <th>NOMBRE DE USUARIO</th>
+                        <th>PERFIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="usuario:${usuarios}">
+                        <td th:text="${usuario.nombre}"></td>
+                        <td th:text="${usuario.apellido}"></td>
+                        <td th:text="${usuario.dni}"></td>
+                        <td th:text="${usuario.email}"></td>
+                        <td th:text="${usuario.nombreUsuario}"></td>
+                        <td>
+                            <th:block th:each="perfil,iter:${usuario.perfil}">
+                                <label th:text="${perfil.tipoPerfil}"></label>
+                                <th:block th:if="${!iter.last}"></th:block>
+                            </th:block>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- CONTENIDO -->
+
+
+    <!-- FOOTER -->
+    <footer th:replace="template/plantilla :: footer"></footer>
+    <!-- FOOTER -->
+
+
+    <!-- BOOSTRAP CORE JS -->
+    <div th:replace="template/plantilla :: scripts"></div>
+    <!-- BOOSTRAP CORE JS -->
+
+
+</body>
+
+</html>
