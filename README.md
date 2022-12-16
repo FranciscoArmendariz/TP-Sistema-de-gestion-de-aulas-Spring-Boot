@@ -1,7 +1,7 @@
 # TP-Sistema-de-gestion-de-aulas-Spring-Boot
 Proyecto realizado como TP para la universidad
 
-desarrollado por:
+desarrollado por:  
 https://github.com/Euge16  
 https://github.com/TomasNieto19  
 https://github.com/FranciscoArmendariz  
