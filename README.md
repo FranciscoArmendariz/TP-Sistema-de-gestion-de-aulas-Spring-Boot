@@ -2,9 +2,9 @@
 Proyecto realizado como TP para la universidad
 
 desarrollado por:
-https://github.com/Euge16
-https://github.com/TomasNieto19
-https://github.com/FranciscoArmendariz
+https://github.com/Euge16  
+https://github.com/TomasNieto19  
+https://github.com/FranciscoArmendariz  
 
 --- INSTRUCCIONES PARA CORRER EL PROYECTO ---
  
