@@ -1,6 +1,10 @@
-# Grupo-10-OO2-2022
-TP Cuatrimestral Objetos 2.
+# TP-Sistema-de-gestion-de-aulas-Spring-Boot
+Proyecto realizado como TP para la universidad
 
+desarrollado por:
+https://github.com/Euge16
+https://github.com/TomasNieto19
+https://github.com/FranciscoArmendariz
 
 --- INSTRUCCIONES PARA CORRER EL PROYECTO ---
  
